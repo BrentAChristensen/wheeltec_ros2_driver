@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:macro name="ar_gripper_srdf">
+    <group name="ar_gripper">
+        <link name="wheeltec_gripper_base_link"/>
+        <link name="wheeltec_gripper_chaise"/>
+        <link name="dummy_mimic_fix"/>
+        <link name="left_finger"/>
+         <link name="right_finger"/>
+         <joint name="right_finger_joint_mimic"/>
+        <joint name="left_finger_joint"/>
+        <passive_joint name="right_finger_joint" />
+    </group>
+    <group_state name="open" group="gripper_group">
+        <joint name="left_finger_joint" value="0"/>
+    </group_state>
+    <group_state name="close" group="gripper_group">
+         <joint name="left_finger_joint" value="0.7298"/>
+    </group_state>
+    <disable_collisions link1="wheeltec_gripper_chaise" link2="left_finger" reason="Adjacent" />
+    <disable_collisions link1="wheeltec_gripper_chaise" link2="right_finger" reason="Adjacent" />
+    <disable_collisions link1="left_finger" link2="right_finger" reason="Default" />
+    <disable_collisions link1="link_6" link2="wheeltec_gripper_chaise" reason="Adjacent" />
+    <disable_collisions link1="link_5" link2="wheeltec_gripper_chaise" reason="Adjacent" />
+  </xacro:macro>
+</robot>
+
+

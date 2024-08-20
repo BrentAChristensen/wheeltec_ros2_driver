@@ -1,0 +1,5 @@
+wheeltec:
+    hardware_driver:
+        serial_port: /dev/ttyACM1
+        baudrate: 9600
+

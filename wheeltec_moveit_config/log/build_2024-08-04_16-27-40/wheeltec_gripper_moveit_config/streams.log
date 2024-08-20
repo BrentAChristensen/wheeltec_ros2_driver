@@ -1,0 +1,33 @@
+[0.009s] Invoking command in '/workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config/build/wheeltec_gripper_moveit_config': /usr/bin/cmake /workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config/install/wheeltec_gripper_moveit_config
+[0.089s] -- The C compiler identification is GNU 11.4.0
+[0.154s] -- The CXX compiler identification is GNU 11.4.0
+[0.161s] -- Detecting C compiler ABI info
+[0.211s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.218s] -- Detecting C compile features
+[0.218s] -- Detecting C compile features - done
+[0.221s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.283s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.283s] -- Detecting CXX compile features
+[0.283s] -- Detecting CXX compile features - done
+[0.293s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.293s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.293s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.293s]   CMake did not find one.
+[0.293s] 
+[0.293s]   Could not find a package configuration file provided by "catkin" with any
+[0.293s]   of the following names:
+[0.293s] 
+[0.293s]     catkinConfig.cmake
+[0.293s]     catkin-config.cmake
+[0.293s] 
+[0.293s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.293s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.293s]   provides a separate development package or SDK, be sure it has been
+[0.293s]   installed.
+[0.293s] 
+[0.293s] [0m
+[0.293s] -- Configuring incomplete, errors occurred!
+[0.293s] See also "/workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config/build/wheeltec_gripper_moveit_config/CMakeFiles/CMakeOutput.log".
+[0.295s] Invoked command in '/workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config/build/wheeltec_gripper_moveit_config' returned '1': /usr/bin/cmake /workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspaces/ar4_ws/src/wheeltec_gripper/wheeltec_gripper_moveit_config/install/wheeltec_gripper_moveit_config
